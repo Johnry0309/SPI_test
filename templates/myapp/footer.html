@@ -1,11 +1,6 @@
 {% load static %}
 
 <!-- Footer -->
-
-
-
-
-
 <footer style="background-color: #004d00; color: yellow; padding: 40px 60px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; border-top: 4px solid yellow;">
 
     <!-- Left Section: Contact Details -->
@@ -16,23 +11,22 @@
         <p style="margin: 10px 0; font-size: 18px;"><strong>Facebook:</strong> <a href="https://www.facebook.com/SPIAntipoloCity/" target="_blank" style="color: yellow; text-decoration: none; text-shadow: 1px 1px 3px black; font-weight: bold;">SPI Antipolo City</a></p>
     </div>
   
-    <!-- Center Section: Navigation Links -->
+    <!-- Middle Section: Navigation Links -->
     <div style="flex: 1; text-align: center; margin: 0 40px;">
-        <p style="margin: 15px 0; font-size: 18px; font-weight: bold;"><a href="#" style="color: yellow; text-decoration: none; text-shadow: 1px 1px 3px black; transition: 0.3s ease-in-out;">About Us</a></p>
-        <p style="margin: 15px 0; font-size: 18px; font-weight: bold;"><a href="#" style="color: yellow; text-decoration: none; text-shadow: 1px 1px 3px black; transition: 0.3s ease-in-out;">Programs</a></p>
-        <p style="margin: 15px 0; font-size: 18px; font-weight: bold;"><a href="#" style="color: yellow; text-decoration: none; text-shadow: 1px 1px 3px black; transition: 0.3s ease-in-out;">Admission</a></p>
-        <p style="margin: 15px 0; font-size: 18px; font-weight: bold;"><a href="#" style="color: yellow; text-decoration: none; text-shadow: 1px 1px 3px black; transition: 0.3s ease-in-out;">Gallery</a></p>
+        <p style="margin: 15px 0; font-size: 18px; font-weight: bold;"><a href="{% url 'about' %}" style="color: yellow; text-decoration: none;">About Us</a></p>
+        <p style="margin: 15px 0; font-size: 18px; font-weight: bold;"><a href="{% url 'programs' %}" style="color: yellow; text-decoration: none;">Programs</a></p>
+        <p style="margin: 15px 0; font-size: 18px; font-weight: bold;"><a href="{% url 'application_process' %}" style="color: yellow; text-decoration: none;">Admission</a></p>
     </div>
-  
+    
     <!-- Right Section: Programs -->
     <div style="flex: 1; max-width: 33%; text-align: right; margin-left: 40px;">
         <p style="margin: 10px 0; font-size: 18px; font-weight: bold;">Programs</p>
-        <p style="margin: 10px 0; font-size: 18px;"><a href="#" style="color: yellow; text-decoration: none; text-shadow: 1px 1px 3px black; transition: 0.3s ease-in-out;">Senior High</a></p>
-        <p style="margin: 10px 0; font-size: 18px;"><a href="#" style="color: yellow; text-decoration: none; text-shadow: 1px 1px 3px black; transition: 0.3s ease-in-out;">College</a></p>
-        <p style="margin: 10px 0; font-size: 18px;"><a href="#" style="color: yellow; text-decoration: none; text-shadow: 1px 1px 3px black; transition: 0.3s ease-in-out;">TESDA</a></p>
+        <p style="margin: 10px 0; font-size: 18px;"><a href="{% url 'history' %}" style="color: yellow; text-decoration: none;">History</a></p>
+        <p style="margin: 10px 0; font-size: 18px;"><a href="{% url 'mission' %}" style="color: yellow; text-decoration: none;">Mission</a></p>
+        <p style="margin: 10px 0; font-size: 18px;"><a href="{% url 'contact' %}" style="color: yellow; text-decoration: none;">Contact</a></p>
     </div>
   
-  </footer>
+</footer>
   
   <!-- Add some hover effects for better interaction -->
   <style>
